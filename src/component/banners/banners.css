@@ -1,0 +1,65 @@
+.advertisement {
+	background: url(../../assets/images/film.jpg);
+	background-attachment: fixed;
+	background-position: top center;
+	background-size: cover;
+	padding: 20px;
+	color: var(--secondary-text);
+	font-size: 18px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+	height: 90vh;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: start;
+}
+
+/* Add a dark overlay */
+.advertisement::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.703); /* Adjust darkness */
+	z-index: 1;
+}
+.blinking-text {
+	font-size: 1.2rem;
+	line-height: 1.5;
+}
+
+/* Ensure content is above the overlay */
+.advertisement * {
+	position: relative;
+	z-index: 2;
+}
+
+@keyframes movebg {
+	50% {
+		background-image: url(../../assets/images/ads.jpg);
+	}
+	100% {
+		background-image: url(../../assets/images/realestate.jpg);
+	}
+}
+.content {
+	color: #ffffff;
+}
+@keyframes colorchange {
+	0% {
+		color: blue;
+	}
+	50% {
+		color: white;
+	}
+	100% {
+		color: blue;
+	}
+}

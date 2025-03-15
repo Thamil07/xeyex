@@ -1,0 +1,135 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+/* 🎨 Background with Gradient Animation */
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #ff6a00, #1e1e1e);
+  background-size: 200% 200%;
+  animation: gradientAnimation 8s ease infinite;
+}
+
+/* 🔥 Gradient Animation */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Dark Overlay */
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* 🌀 Floating Particles */
+.particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("https://gingermediagroup.com/wp-content/uploads/2024/01/commercial-advertisement-images-1024x576.jpg") no-repeat center center/cover;
+  opacity: 0.2;
+  animation: float 20s infinite linear;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+/* ✨ Content Styling */
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  padding: 20px;
+}
+
+/* 📝 Typewriter Effect */
+#headline {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ff6a00;
+  text-transform: uppercase;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* 💥 Blinking Effect */
+.blinking-text {
+  font-size: 1.3rem;
+  color: #ffcc00;
+  font-weight: bold;
+  animation: blinking 1.5s infinite;
+}
+
+@keyframes blinking {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.highlight {
+  color: #ff6a00;
+  font-weight: bold;
+}
+
+/* 🎯 CTA Button with Glow Effect */
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background-color: #ff6a00;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 0px 0px 15px rgba(255, 106, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 🚀 Glow Effect */
+.cta-button:hover {
+  background-color: #d95a00;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 25px rgba(255, 106, 0, 0.9);
+}
+
+/* 🌟 Fade In Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  #headline {
+      font-size: 2.5rem;
+  }
+
+  .cta-button {
+      padding: 10px 20px;
+      font-size: 1rem;
+  }
+}
