@@ -1,57 +1,90 @@
 .carousel {
-    width: 70%;
-    margin: auto;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
-    margin-top: 1rem;
+	width: 70%;
+	margin: auto;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	margin-top: 1rem;
+}
+.carosal {
+	width: 100%;
+}
 
-  }
-  .carosal{
-    width: 100%;
+.carousel-item {
+}
 
-  }
-  
-  .carousel-item {
-   
-  }
-  
-  .carousel-item img {
-    width: 30%;
-    border-radius: 8px;
-    height: 15rem;
-   
-  }
-  
-  .carousel-inner .content {
-    width: 70%;
-    height: 15rem;
-  }
-  .carousel-control-next{
-    color: black;
-  }
-  .carousel-control-prev{
-    color: black;
-  }
-  .carousel-inner .content{
-    color:black;
-  }
-  .carousel-dots {
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-  }
-  
-  .dot {
-    width: 12px;
-    height: 12px;
-    margin: 0 5px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .dot.active {
-    background-color: red; /* Active dot color */
-  }
- 
+.carousel-item img {
+	width: 40%;
+	/* border-radius: 8px; */
+	height: 15rem;
+	object-fit: cover;
+}
+
+.carousel-inner .content {
+	width: 70%;
+	/* height: 15rem; */
+}
+.carousel-control-next {
+	color: black;
+}
+.carousel-control-prev {
+	color: black;
+}
+.carousel-inner .content {
+	color: black;
+}
+.carousel-dots {
+	display: flex;
+	justify-content: center;
+	margin-top: 15px;
+}
+
+.dot {
+	width: 12px;
+	height: 12px;
+	margin: 0 5px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.dot.active {
+	background-color: red; /* Active dot color */
+}
+
+@media only screen and (max-width: 1000px) {
+	/* .carousel-wrapper{
+  padding: 2rem !important;
+} */
+	.carousel {
+		width: 85%;
+	}
+}
+@media only screen and (max-width: 800px) {
+	/* .carousel-wrapper{
+  padding: 2rem !important;
+} */
+	.carousel {
+		width: 100%;
+	}
+	.carousel-wrapper {
+		padding-left: 1rem !important;
+		padding-right: 1rem !important;
+	}
+	/* .slider-text .slider-title{
+  font-size: 1rem;
+} */
+}
+
+@media only screen and (max-width: 800px) {
+	.slider-content {
+		flex-direction: column;
+		align-items: start;
+	}
+	.carousel-item img {
+		width: 100%;
+	}
+	.carousel-inner .content {
+		width: 100%;
+	}
+}

@@ -110,6 +110,9 @@ h1{
 	padding: 5px 15px;
 	align-self: start;
 	color: var(--primary-text);
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem;
 }
 
 .footer-licence {
@@ -123,9 +126,29 @@ h1{
 	justify-self: center;
 }
 
+.footer-icons {
+	list-style: none;
+	padding-left: 0px !important;
+	margin: 0;
+}
+
+.footer-icons li {
+	display: inline;
+	margin: 0 10px;
+}
+
+.footer-icons a {
+	text-decoration: none;
+	color: var(--primary-text);
+}
+
+
 .footer-links {
 	list-style: none;
+	padding-left: 0px !important;
 	margin: 0;
+	flex-direction: column;
+	row-gap: 10px;
 }
 
 .footer-links li {
@@ -136,4 +159,100 @@ h1{
 .footer-links a {
 	text-decoration: none;
 	color: var(--primary-text);
+}
+
+.footer-links .footer-p-details{
+	display: flex;
+	align-items: center;
+	column-gap: 20px;
+}
+.footer-links .footer-p-details {
+	display: flex;
+	align-items: baseline;
+	column-gap: 20px;
+}
+.footer-links .footer-p-details p {
+	word-break: break-word;
+	font-size: 1rem;
+}
+.footer .f-icons{
+	font-size: 1.5rem;
+}
+
+.footer-links .footer-p-details .footer-r-icon{
+	color: var(--span1color);
+}
+.footer-links .footer-p-details #gmail_icon{
+	color: var(--span2color);
+}
+/* .footer-icons{
+	width: 25%;
+}
+ .center-text-f{
+	width: 25%;
+}
+.footer-links{
+	width: 25%;
+} */
+
+@media only screen and (max-width:3000px) {
+	.footer-icons{
+		width: 33%;
+	}
+	 .center-text-f{
+		width: 33%;
+	}
+	.footer-links{
+		width: 25%;
+	}
+}
+/* @media only screen and (max-width:1000px) {
+	.footer{
+		flex-direction: column-reverse;
+		row-gap: 4rem;
+		padding: 4rem;		
+	}
+	.footer-icons{
+		width: 100%;
+		display: flex;
+		justify-content: end;
+	}
+	 .center-text-f{
+		width: 100%;
+		display: flex;
+		justify-content: end;
+
+	}
+	.footer-links{
+		width: 100%;
+		display: flex;
+		justify-content: end;
+		align-items: flex-end;
+
+	}
+} */
+@media only screen and (max-width:1000px) {
+	.footer{
+		flex-direction: column-reverse;
+		row-gap: 2rem;
+		padding: 2rem;		
+	}
+	.footer-icons{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	 .center-text-f{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+
+	}
+	.footer-links{
+		width: 100%;
+		display: flex;
+		align-items: center;
+
+	}
+
 }

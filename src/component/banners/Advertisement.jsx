@@ -4,22 +4,22 @@ import "./banners.css";
 const Advertisement = () => {
 	return (
 		<section className="d-flex advertisement">
-			<div className="content w-100">
-				<h1 className="mb-2" style={{ fontSize: "3rem" }}>
+			<div id="home_text" className="content w-100">
+				<h1 className="mb-2" style={{ fontSize: "3rem", fontWeight:"700" }}>
 					About us
 				</h1>
 				<h4 id="headline" className="mb-3">
 					Welcome to <span className="span1" style={{fontSize:"2.5"}}>XeyeX</span>-
 					<span className="span2">Media</span>
 				</h4>
-				<p className="blinking-text" style={{ width: "60%", fontSize:"1.5rem" }}>
+				<p className="blinking-text" style={{ width: "70%", fontSize:"1.5rem" }}>
 					where creativity meets strategy! We are a dynamic company specializing
 					in <span className="span1">digital marketing</span>,{" "}
 					<span className="span1">advertising</span>,{" "}
 					<span className="span1">real estate</span>, and 
 					<span className="span1"> film production</span>.
 				</p>
-				<p style={{ width: "65%" ,lineHeight:"2"}}>
+				<p className="banner-para" style={{ width: "75%" ,lineHeight:"2"}}>
 					Our mission is to bring innovative solutions that help businesses
 					grow, brands stand out, and stories come to life. With a team of
 					passionate professionals, we craft result-driven marketing campaigns,

@@ -9,19 +9,19 @@ const slides = [
 		image: ads,
 		title: "Advertisement",
 		description:
-			"Your vision, our mission. We craft experiences that inspire and drive results.",
+			"We offer innovative Advertising solutions that maximize brand visibility and engagement. Our strategies ensure impactful campaigns, reaching the right audience with creativity and precision.",
 	},
 	{
 		image: realestate,
 		title: "Real Estate",
 		description:
-			"Turning houses into homes, and investments into opportunities.",
+			"We provide expert Real Estate solutions, ensuring seamless property transactions with transparency and efficiency. Our focus is on innovation, customer satisfaction, and making buying, selling, or investing hassle-free.",
 	},
 	{
 		image: film,
 		title: "Film Production",
 		description:
-			"Lights, camera, action! Creating unforgettable stories that captivate and inspire.",
+			"We specialize in Film Production, delivering high-quality content with creativity and precision. Our team ensures seamless execution, from concept to final production, bringing stories to life.",
 	},
 ];
 
@@ -83,16 +83,15 @@ const CarouselComponent = () => {
 						<div
 							key={index}
 							className={`carousel-item ${index === 0 ? "active" : ""}`}>
-							<div className="d-flex align-items-center justify-content-center">
+							<div className="slider-content d-flex align-items-center justify-content-center">
 								<img
 									src={slide.image}
 									className="d-block"
-									style={{ width: "40%" ,padding:"1rem",borderRadius:"15px" }}
 									alt={slide.title}
 								/>
-								<div className="content p-4">
-									<h2 className="fs-1 fw-bold">{slide.title}</h2>
-									<p>{slide.description}</p>
+								<div className="slider-text content p-4">
+									<h2 className="slider-title fs-1 fw-bold">{slide.title}</h2>
+									<p className="slider-para">{slide.description}</p>
 								</div>
 							</div>
 						</div>
