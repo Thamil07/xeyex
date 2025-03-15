@@ -26,8 +26,8 @@ const ContactForm = () => {
 				},
 				body: JSON.stringify({
 					sender: { email: formData.email }, // Replace with your email
-					to: [{ email: "tarasan655@gmail.com" }],
-					// to: [{ email: "xeyex.media.private.limited@gmail.com" }], // Replace with recipient email
+					// to: [{ email: "tarasan655@gmail.com" }],
+					to: [{ email: "xeyex.media.private.limited@gmail.com" }], // Replace with recipient email
 					subject: "New Contact Form Submission",
 					htmlContent: `
             <h3>New Message from your XeyeX website</h3>
